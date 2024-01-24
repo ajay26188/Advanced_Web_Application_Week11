@@ -11,10 +11,10 @@ const Header = () => {
         <p>This is a Header page.</p>
         <AppBar>
             <Toolbar>
-                <Button element= {Link} to="/">
+                <Button component= {Link} to="/" color="inherit">
                     Home
                 </Button>
-                <Button element= {Link} to="/about">
+                <Button component= {Link} to="/about" color="inherit">
                     About
                 </Button>
             </Toolbar>
