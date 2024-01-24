@@ -12,10 +12,10 @@ const Header = () => {
         <AppBar>
             <Toolbar>
                 <Button component= {Link} to="/" color="inherit">
-                    Home
+                    HOME
                 </Button>
                 <Button component= {Link} to="/about" color="inherit">
-                    About
+                    ABOUT
                 </Button>
             </Toolbar>
         </AppBar>
