@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header />
         <Routes>
-          <Route path ="/" element={<MyContainer />} />
+          <Route path ="/" element={<WrappedMyContainer />} />
           <Route path ="/about" element={<About />} />
         </Routes>
     </div>
