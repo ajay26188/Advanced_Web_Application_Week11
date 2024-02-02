@@ -1,9 +1,9 @@
 import React from 'react'
 
-const MyHOC = (wrappedComponent, {name}) => {
-  return () => (
+const MyHOC = (WrappedComponent, {name}) => {
+  return (props) => (
     <div className="wrapper">
-        <wrappedComponent name={name} />
+        <WrappedComponent {...props} name={name} />
     </div>
   );
 };
