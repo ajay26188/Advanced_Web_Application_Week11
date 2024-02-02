@@ -1,4 +1,5 @@
 import React from 'react'
+import MyHOC from './MyHOC';
 
 const MyContainer = () => {
   return (
@@ -9,4 +10,4 @@ const MyContainer = () => {
   )
 }
 
-export default MyContainer
+export default MyHOC(MyContainer, {name: "Kalle"});
