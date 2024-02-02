@@ -15,9 +15,10 @@ function App() {
     <div className="App">
       <Header />
         <Routes>
-          <Route path ="/" element={<WrappedMyContainer />} />
+          <Route path ="/" element={<MyContainer />} />
           <Route path ="/about" element={<About />} />
         </Routes>
+        <WrappedMyContainer />
     </div>
     </Router>
   );
