@@ -18,7 +18,6 @@ function App() {
           <Route path ="/" element={<MyContainer />} />
           <Route path ="/about" element={<About />} />
         </Routes>
-        <WrappedMyContainer />
     </div>
     </Router>
   );
