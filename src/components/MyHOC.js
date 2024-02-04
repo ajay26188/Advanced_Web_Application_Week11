@@ -5,11 +5,11 @@ const MyHOC = (WrappedComponent, {name}) => {
         render() {
             return (
                 <div className="wrapper">
-                    <WrappedComponent name={name} />
+                    <WrappedComponent {...props} />
                 </div>
             )
         }
     }
 }
 
-export default MyHOC
+export default MyHOC;
