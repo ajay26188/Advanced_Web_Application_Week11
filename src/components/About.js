@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import MyHOC from './MyHOC';
 
-const About = ({name}) => {
+const About = () => {
 
     const [data, setData] = useState([]);
 
@@ -38,4 +37,4 @@ const About = ({name}) => {
   )
 }
 
-export default MyHOC(About, {name: "Kalle"});
+export default About
