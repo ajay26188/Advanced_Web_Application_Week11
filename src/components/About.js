@@ -28,7 +28,6 @@ const About = ({name}) => {
 
   return (
     <div>
-        <div>Hello {name}!</div>
         <ul>
             {data.map(item => (
                 <li key={item.id}>{item.title}</li>

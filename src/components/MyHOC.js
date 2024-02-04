@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MyHOC = (WrappedComponent, {name}) => {
+const MyHOC = (WrappedComponent, props) => {
     return class extends React.Component {
         render() {
             return (
