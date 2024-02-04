@@ -14,15 +14,21 @@ const Header = () => {
   return (
     <div>
         <h1>Header</h1>
-        <p>This is the front page.</p>
+        <p>{t('This is the front page')}</p>
         <AppBar>
-            <Toolbar>
+            <Toolbar style={{ justifyContent: 'space-between'}}>
+                <div>
                 <Button component= {Link} to="/" color="inherit">
-                    HOME
+                    {t('Home')}
                 </Button>
                 <Button component= {Link} to="/about" color="inherit">
-                    ABOUT
+                    {t('About')}
                 </Button>
+                </div>
+                <div>
+                <Button id="fi" onClick={() => changeLanguage('fi')} color="inherit">FI</Button>
+                <Button id="en" onClick={() => changeLanguage('en')} color="inherit">EN</Button>
+                </div>
             </Toolbar>
         </AppBar>
     </div>
