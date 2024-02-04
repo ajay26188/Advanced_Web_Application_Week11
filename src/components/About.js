@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-const About = () => {
+const About = ({name}) => {
 
     const [data, setData] = useState([]);
 
@@ -28,6 +28,7 @@ const About = () => {
 
   return (
     <div>
+        <div>Hello {name}!</div>
         <ul>
             {data.map(item => (
                 <li key={item.id}>{item.title}</li>
