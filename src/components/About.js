@@ -27,8 +27,6 @@ const About = () => {
 
   return (
     <div>
-        <h1>About</h1>
-        <p>This is About page.</p>
         <ul>
             {data.map(item => (
                 <li key={item.id}>{item.title}</li>
