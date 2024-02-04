@@ -5,7 +5,9 @@ const MyHOC = (WrappedComponent, {name}) => {
         render() {
             return (
                 <div className="wrapper">
+                    <div className="wrapper">
                     <WrappedComponent name={name} />
+                    </div>
                 </div>
             )
         }
